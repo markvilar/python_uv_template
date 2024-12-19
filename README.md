@@ -1,7 +1,6 @@
 # Python Project Template - UV
 
-![ci](https://github.com/markvilar/python_uv_template/actions/workflows/ci.yml/badge.svg)
-![pylint](https://github.com/markvilar/python_uv_template/actions/workflows/pylint.yml/badge.svg)
+![ci](https://github.com/markvilar/python_uv_template/actions/workflows/ubuntu.yml/badge.svg)
 
 A template repository for python packages with integration of [the uv package manager](https://docs.astral.sh/uv/).
 
