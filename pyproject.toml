@@ -1,0 +1,39 @@
+[project]
+name = "python_uv_template"
+version = "0.1.0"
+description = "A template repository for Python packages with uv package manager integration."
+readme = "README.md"
+authors = [
+    { name = "Martin Kvisvik Larsen", email = "martin.kvisvik.larsen@hotmail.com" }
+]
+requires-python = ">=3.12"
+dependencies = [
+    "arrow>=1.3.0",
+    "black>=24.10.0",
+    "click>=8.1.7",
+    "loguru>=0.7.3",
+    "msgpack>=1.1.0",
+    "polars>=1.17.1",
+    "pytest>=8.3.4",
+    "python-dotenv>=1.0.1",
+    "returns>=0.24.0",
+    "ruff>=0.8.3",
+    "tqdm>=4.67.1",
+]
+
+[project.scripts]
+entrypoint = "libtemp.entrypoint:main"
+example_script = "scripts.example:main"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/libtemp", "scripts"]
+
+[tool.uv]
+package = true
+
+[tool.ruff]
+line-length = 80
