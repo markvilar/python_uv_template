@@ -30,11 +30,11 @@ uv run <script>
 #### Invoking tools
 
 ```shell
-# Invoke ruff
+# Invoke ruff check
 uv run ruff check .
 
-# Invoke black
-uv run black .
+# Invoke ruff format
+uv run ruff format .
 
 # Invoke pytest
 uv run pytest
