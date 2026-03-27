@@ -1,4 +1,4 @@
-""" Module for common functions. """
+"""Module for common functions."""
 
 
 def print_hello_to(subject: str) -> None:

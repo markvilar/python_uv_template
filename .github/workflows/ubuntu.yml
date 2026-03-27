@@ -28,11 +28,11 @@ jobs:
     - name: Build project
       run: uv build
     
-    - name: Run ruff
+    - name: Run ruff check
       run: uv run ruff check .
   
-    - name: Run black
-      run: uv run black .
+    - name: Run ruff format
+      run: uv run ruff format .
     
     - name: Run tests
       run: uv run pytest tests

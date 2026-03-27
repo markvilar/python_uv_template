@@ -1,4 +1,4 @@
-""" Module for math functions. """
+"""Module for math functions."""
 
 
 def add(first: float, second: float):
