@@ -29,10 +29,13 @@ jobs:
       run: uv build
     
     - name: Run ruff check
-      run: uv run ruff check .
+      run: uv run ruff check src/ tests/
   
     - name: Run ruff format
-      run: uv run ruff format .
-    
+      run: uv run ruff format src/ tests/
+     
+    - name: Run mypy
+      run: uv run mypy src/ tests/
+   
     - name: Run tests
-      run: uv run pytest tests
+      run: uv run pytest tests/
